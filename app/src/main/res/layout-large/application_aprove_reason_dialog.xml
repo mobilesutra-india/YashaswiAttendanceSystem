@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:background="@color/black_color"
+
+    android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Reason"
+            android:layout_marginLeft="10dp"
+
+
+            android:textSize="@dimen/text_size_NORMAL"
+            android:textColor="@color/white_color"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/remark_bg"
+            android:gravity="start"
+            android:hint="Enter your remark here:"
+            android:maxLines="5"
+            android:minLines="5"
+            android:textSize="@dimen/text_size_NORMAL"
+
+            android:padding="10dp"
+            android:singleLine="false"
+            android:textColor="#525252" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_reason"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/submit1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/roundbutton"
+                android:fontFamily="@string/fontFamily__roboto_light"
+                android:text="Submit"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_NORMAL" />
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roundbutton"
+                android:text="Cancel"
+
+                android:id="@+id/cancel1"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_NORMAL"
+                android:fontFamily="@string/fontFamily__roboto_light"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

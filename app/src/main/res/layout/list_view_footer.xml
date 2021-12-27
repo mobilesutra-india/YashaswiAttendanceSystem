@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b5b5b5" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="4">
+
+
+        <TextView
+            android:id="@+id/textView_week_cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:text="Total"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_16" />
+        <TextView
+            android:id="@+id/textView_actual_hrs_cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:text="TextView"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/textView_working_hrs_cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:text="TextView"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_16" />
+
+
+
+        <TextView
+            android:id="@+id/textView_extra_hrs_cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+
+            android:text="TextView"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

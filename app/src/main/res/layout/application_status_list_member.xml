@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/cancel_request"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/deleteicon"
+        android:layout_gravity="right"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+        <TextView
+            android:text="Leave Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center"
+            android:fontFamily="@string/fontFamily__roboto_light"
+
+            android:id="@+id/textView3"
+             />
+
+        <TextView
+            android:text="PL"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/leave_type_application_status"
+           android:layout_marginLeft="6dp"
+
+            android:id="@+id/textView_leave_type"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:layout_weight="1">
+        <TextView
+            android:text="FROM 15 MAY 17 TO 15 MAY 17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView_date"
+            android:textColor="#448991"
+            android:textSize="@dimen/text_size_14"
+            />
+
+        <TextView
+            android:text="Pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f68185"
+            android:textSize="@dimen/text_size_14"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:background="@drawable/leave_type_application_status_border"
+            android:id="@+id/textView_statuss" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

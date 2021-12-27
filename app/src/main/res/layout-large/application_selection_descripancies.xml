@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left"
+        android:background="#4d516a">
+
+        <TextView
+            android:text="WED 02 MAY 17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_date"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold"
+
+            android:textColor="@color/white_color"
+            android:fontFamily="@string/fontFamily__roboto_light"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_margin="8dp">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/radiogroup"
+
+                android:orientation="vertical">
+                <!--<RadioButton
+                    android:text="Leave Application"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/text_size_NORMAL"
+                    app:buttonTint="@color/radio_button_color"
+                    android:id="@+id/radioButton_leave" />
+                <RadioButton
+                    android:text="Attendance Regularization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/text_size_NORMAL"
+                    app:buttonTint="@color/radio_button_color"
+                    android:id="@+id/radioButton_regulization" />
+                <RadioButton
+                    android:text="Out duty Application"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/text_size_NORMAL"
+                    app:buttonTint="@color/radio_button_color"
+                    android:id="@+id/radioButton_out_duty" />
+                <RadioButton
+                    android:text="Comp-off Application"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/text_size_NORMAL"
+                    app:buttonTint="@color/radio_button_color"
+                    android:id="@+id/radioButton_comp_off" />
+                <RadioButton
+                    android:text="WFH Application"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/text_size_NORMAL"
+                    app:buttonTint="@color/radio_button_color"
+                    android:id="@+id/radioButton_wfh" />-->
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                  android:gravity="center"
+                android:layout_margin="0dp">
+                <include
+                   layout="@layout/bottom_layout"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+
+    <!--for white background layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:background="@color/background_app">
+
+            <!--  for date field....-->
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_floatIn_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text_color_hint"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:paddingTop="10dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="From Date"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textSize="@dimen/Text_size_large_device"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/text_color_hint"
+                    android:drawablePadding="4dp"
+                    android:id="@+id/editText_in_date_days"
+                    android:drawableRight="@drawable/ic_action_calendar"
+                    android:fontFamily="@string/fontFamily__roboto_light" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--  .................-->
+
+
+
+            <!--  for out date field....-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_floaout_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text_color_hint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="To Date"
+                    android:clickable="true"
+                    android:editable="false"
+              android:focusableInTouchMode="false"
+                    android:textSize="@dimen/Text_size_large_device"
+                    android:inputType="none"
+                    android:textColor="@color/text_color_hint"
+                    android:drawablePadding="4dp"
+                    android:id="@+id/editText_out_date_days"
+                    android:drawableRight="@drawable/ic_action_calendar"
+                    android:fontFamily="@string/fontFamily__roboto_light" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--..................-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_no_of_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:textColorHint="@color/text_color_hint"
+                    android:layout_weight="0.2"
+                    android:padding="10dp">
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/attd_reg_app_no_of_days"
+                        android:textSize="22sp"
+                        android:maxLines="1"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/txt_out_duty_cal_days"
+
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="No. of days"
+                     android:layout_marginLeft="4dp"
+                     android:padding="10dp"
+                     android:layout_marginTop="4dp"
+                     android:textSize="22sp"
+                     android:layout_weight="0.2"
+                     android:fontFamily="@string/fontFamily__roboto_light"
+                     android:id="@+id/textView12" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     android:layout_marginLeft="6dp"
+                     android:padding="10dp"
+                     android:layout_marginTop="4dp"
+                     android:textSize="22sp"
+                     android:layout_weight="0.8"
+                     android:id="@+id/txt_out_duty_cal_days"/>-->
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="14dp"
+
+                android:padding="6dp">
+
+
+                <!--<android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_wfh_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_hint">-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="2dp"
+                    android:text="Reason"
+                    android:textSize="22sp" />
+
+
+                <Spinner
+                    android:id="@+id/editText_wfh_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:hint="@string/app_reason"
+                    android:inputType="textNoSuggestions"
+                    android:padding="10dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_size_NORMAL" />
+                <!-- </android.support.design.widget.TextInputLayout>-->
+            </LinearLayout>
+
+
+
+
+            <!--  ..........................-->
+
+
+
+            <!--  for out duty location field....-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+
+            android:padding="6dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_floatout_date_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text_color_hint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/out_duty_app_location"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="true"
+                    android:textSize="@dimen/Text_size_large_device"
+                    android:inputType="textNoSuggestions"
+                    android:textColor="@color/text_color_hint"
+                    android:drawablePadding="4dp"
+                    android:id="@+id/editText_out_duty_location"
+                    android:fontFamily="@string/fontFamily__roboto_light" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--............................-->
+        </LinearLayout>
+
+
+
+
+
+
+            <!--  for remark field....-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+
+            android:padding="6dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_floaout_duty_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text_color_hint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Reason description"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusableInTouchMode="true"
+                    android:textSize="@dimen/Text_size_large_device"
+                    android:inputType="textNoSuggestions"
+                    android:textColor="@color/text_color_hint"
+                    android:drawablePadding="4dp"
+                    android:id="@+id/editText_out_duty_remark"
+                    android:fontFamily="@string/fontFamily__roboto_light" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--  ..........................-->
+
+            <!--for approver hirerarchy..........-->
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_approverhirearchy"
+                android:textSize="@dimen/Text_size_large_device"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@string/fontFamily__roboto_light"
+                android:textColor="@color/approver_hirarchy_color"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="4"
+
+                android:id="@+id/linearout1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+
+                    android:id="@+id/linearout"
+                    >
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:background="#009688">
+                         <TextView
+                             android:id="@+id/textViewheader"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="10dp"
+                             android:text="Level1"
+                             android:textSize="14sp"
+
+                             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                     </LinearLayout>-->
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow1"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout2"
+                    >
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="#009688">
+                        <TextView
+                            android:id="@+id/textViewheader2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Level2"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="10dp"
+
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                    </LinearLayout>-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow2"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout3"
+                    >
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="#009688">
+                        <TextView
+                            android:id="@+id/textViewheader3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Level3"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="10dp"
+
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                    </LinearLayout>-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow3"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout4"
+                    >
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:background="#009688">
+                         <TextView
+                             android:id="@+id/textViewheader4"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="10dp"
+                             android:text="Level4"
+                             android:textSize="14sp"
+                             android:layout_marginLeft="10dp"
+
+                             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                     </LinearLayout>-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <!--<android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sample_icon"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sample_icon"/>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sample_icon"/>
+
+
+                </LinearLayout>
+
+                &lt;!&ndash; .........................&ndash;&gt;
+
+
+            </android.support.v4.widget.NestedScrollView>-->
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
+
+
+
+    <!--</LinearLayout>-->
+    </LinearLayout>

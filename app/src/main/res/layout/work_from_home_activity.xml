@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tol"
+
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foot"
+        android:layout_alignParentBottom="true"
+
+        android:padding="10dp">
+
+        <include layout="@layout/bottom_layout" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tab_fragment_out_duty"
+        android:orientation="vertical"
+        android:layout_below="@id/tol"
+        android:layout_above="@id/foot"
+        android:layout_marginBottom="10dp">
+
+        <include
+            layout="@layout/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:padding="@dimen/layout_padding"
+        android:focusable="true"
+        android:layout_below="@+id/tol"
+        android:layout_above="@id/foot"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+
+            >
+
+
+            &lt;!&ndash;...................&ndash;&gt;
+
+            &lt;!&ndash;for spinner first row&ndash;&gt;
+
+
+
+            &lt;!&ndash; For Radio Button&ndash;&gt;
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="6dp">
+
+
+                <RadioGroup
+                    android:id="@+id/radiogp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_firsthalf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:buttonTint="@color/text_color_hint"
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        android:text="@string/leave_app_firsthalf"
+                        android:textSize="@dimen/Text_size_normal_device_leavetype" />
+
+                    <RadioButton
+                        android:id="@+id/radio_secondhalf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:buttonTint="@color/text_color_hint"
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        android:text="@string/leave_app_secondhalf"
+                        android:textSize="@dimen/Text_size_normal_device_leavetype" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            &lt;!&ndash;.............&ndash;&gt;
+
+            &lt;!&ndash;.....For From Date.....&ndash;&gt;
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_float_wfh_from_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text_color_hint">
+
+
+                <EditText
+                    android:id="@+id/editText_wfh_from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_action_calendar"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:hint="@string/leave_app_fromdate"
+
+                    android:maxLines="1"
+
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/Text_size_normal_device_leavetype" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            &lt;!&ndash;.............&ndash;&gt;
+
+            &lt;!&ndash; To Date.....&ndash;&gt;
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_float_wfhto_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/text_color_hint">
+
+                <EditText
+                    android:id="@+id/editText_wfh_to_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/ic_action_calendar"
+                    android:editable="false"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:hint="@string/leave_app_todate"
+
+                    android:maxLines="1"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/Text_size_normal_device_leavetype" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            &lt;!&ndash; For Number of days...&ndash;&gt;
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_wfh_no_of_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:id="@+id/work_from_home_no.of_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:drawablePadding="6dp"
+                        android:focusable="true"
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        android:hint="@string/attd_reg_app_no_of_days"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/text_color_hint"
+
+
+                        android:textSize="@dimen/Text_size_normal_device_leavetype" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+            &lt;!&ndash; ..............................&ndash;&gt;
+
+
+            &lt;!&ndash; ..................&ndash;&gt;
+
+            &lt;!&ndash;   For Reason...&ndash;&gt;
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+
+                &lt;!&ndash;<android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_wfh_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_hint">&ndash;&gt;
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:textSize="@dimen/Text_size_normal_device_leavetype"
+                    android:text="Reason"/>
+
+
+                    <Spinner
+                        android:id="@+id/editText_wfh_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        android:hint="@string/app_reason"
+                        android:inputType="textNoSuggestions"
+                        android:padding="6dp"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color_hint"
+                        android:textSize="@dimen/Text_size_normal_device_leavetype" />
+               &lt;!&ndash; </android.support.design.widget.TextInputLayout>&ndash;&gt;
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_wfh_reason_descroption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:id="@+id/editText_wfh_reason_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:drawablePadding="6dp"
+                        android:focusable="true"
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        android:hint="Reason Description"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/text_color_hint"
+
+
+                        android:textSize="@dimen/Text_size_normal_device_leavetype" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+                &lt;!&ndash; ...................&ndash;&gt;
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:padding="6dp"
+                    android:text="@string/app_approverhirearchy"
+                    android:textColor="@color/approver_hirarchy_color"
+                    android:textSize="@dimen/Text_size_normal_device" />
+
+
+            &lt;!&ndash;<android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="60dp">&ndash;&gt;
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="4"
+
+                android:id="@+id/linearout1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+
+                    android:id="@+id/linearout"
+                    >
+                    &lt;!&ndash; <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:background="#009688">
+                         <TextView
+                             android:id="@+id/textViewheader"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="10dp"
+                             android:text="Level1"
+                             android:textSize="14sp"
+
+                             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                     </LinearLayout>&ndash;&gt;
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow1"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout2"
+                    >
+                    &lt;!&ndash;<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="#009688">
+                        <TextView
+                            android:id="@+id/textViewheader2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Level2"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="10dp"
+
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                    </LinearLayout>&ndash;&gt;
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow2"
+                       />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout3"
+                    >
+                    &lt;!&ndash;<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="#009688">
+                        <TextView
+                            android:id="@+id/textViewheader3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text="Level3"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="10dp"
+
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                    </LinearLayout>&ndash;&gt;
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow3"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout4"
+                    >
+                    &lt;!&ndash; <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:background="#009688">
+                         <TextView
+                             android:id="@+id/textViewheader4"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="10dp"
+                             android:text="Level4"
+                             android:textSize="14sp"
+                             android:layout_marginLeft="10dp"
+
+                             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+                     </LinearLayout>&ndash;&gt;
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            &lt;!&ndash; <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="8dp"
+                 android:orientation="vertical"
+
+                 >
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="2dp"
+                     android:background="@drawable/sample_icon"
+                     android:padding="2dp" />
+
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginTop="4dp"
+                     android:background="@drawable/sample_icon" />
+
+
+             </LinearLayout>&ndash;&gt;
+            &lt;!&ndash;</android.support.v4.widget.NestedScrollView>&ndash;&gt;
+
+
+            &lt;!&ndash;<ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="105dp">&ndash;&gt;
+
+            &lt;!&ndash;  &ndash;&gt;
+
+            &lt;!&ndash;  </android.support.v4.widget.NestedScrollView>&ndash;&gt;
+            &lt;!&ndash;</ScrollView>&ndash;&gt;
+
+
+        </LinearLayout>
+
+
+    </ScrollView>-->
+
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

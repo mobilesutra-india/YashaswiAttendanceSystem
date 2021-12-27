@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="1dp">
+
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:background="@drawable/roundbutton"
+            android:text="Submit"
+            android:id="@+id/apply"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/Text_size_large_device"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/roundbutton"
+            android:text="@string/app_cancel_button"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/Text_size_large_device"
+            android:id="@+id/cancel"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+    </LinearLayout>
+
+</LinearLayout>

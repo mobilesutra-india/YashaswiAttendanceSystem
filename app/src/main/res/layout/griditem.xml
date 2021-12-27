@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp" >
+    
+    <RelativeLayout 
+    android:id="@+id/rel1"
+    android:layout_width="wrap_content"
+    android:layout_height="15dp">
+
+        <TextView
+            android:id="@+id/day_date"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="left|top|start"
+            android:layout_gravity="top|left|start"
+            android:text=""
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13sp"
+            android:textStyle="bold" >
+        </TextView>
+  </RelativeLayout>
+  
+    <RelativeLayout 
+    android:id="@+id/rel2"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_below="@+id/rel1"
+    >
+    
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:textSize="10sp"/>
+    
+<!--             android:gravity="right|bottom|end" -->
+<!--             android:layout_gravity="right|bottom|end" -->
+    
+   
+</RelativeLayout>
+    <!-- <ImageView -->
+    <!-- android:id="@+id/circle" -->
+    <!-- android:layout_width="10dp" -->
+    <!-- android:layout_height="10dp" -->
+    <!-- android:gravity="right|bottom" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:visibility="gone" -->
+    <!-- > -->
+    <!-- </ImageView> -->
+
+    <TextView
+        android:id="@+id/completedate"
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

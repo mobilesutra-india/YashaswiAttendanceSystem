@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/manager_working_header"
+    android:weightSum="8"
+    android:gravity="center"
+        android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    >
+    <TextView
+        android:text="Name"
+        android:layout_width="0dp"
+        android:textColor="@color/white_color"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_NORMAL"
+        android:fontFamily="@string/fontFamily__roboto_light"
+
+        android:gravity="center|start"
+        android:paddingLeft="10dp"
+        android:layout_weight="2"
+        android:id="@+id/textView_shift_name" />
+    <TextView
+        android:text="02 May"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_NORMAL"
+
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:layout_weight="1"
+        android:id="@+id/textView_shift1" />
+    <TextView
+        android:text="24 May"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_NORMAL"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:layout_weight="1"
+        android:id="@+id/textView_shift2" />
+
+    <TextView
+        android:text="10 June"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_NORMAL"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:layout_weight="1"
+        android:id="@+id/textView_shift3" />
+
+    <TextView
+        android:text="10 June"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_NORMAL"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:layout_weight="1"
+        android:id="@+id/textView_shift4" />
+    <TextView
+        android:text="10 June"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_NORMAL"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:layout_weight="1"
+        android:id="@+id/textView_shift5" />
+    <TextView
+        android:text="10 June"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_NORMAL"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:layout_weight="1"
+        android:id="@+id/textView_shift6" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <ListView
+        android:id="@+id/list_shift_allocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:background="#f3f3f3"
+        android:cacheColorHint="#515573"
+        />
+</LinearLayout>
+
+</LinearLayout>

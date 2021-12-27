@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView_reason1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Name"
+                android:textSize="@dimen/text_size_NORMAL" />
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:text="Personal work"
+                android:textColor="#5eb2b4"
+                android:textSize="@dimen/text_size_NORMAL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:id="@+id/textView_noti_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason"
+                android:gravity="center"
+
+
+                android:textSize="@dimen/text_size_NORMAL" />
+
+
+            <TextView
+                android:id="@+id/textView_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:gravity="center"
+                android:text="FROM 15 MAY 17 TO 15 MAY 17"
+                android:textColor="#5eb2b4"
+                android:textSize="@dimen/text_size_NORMAL" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView_Fromdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Taken Date"
+                android:textSize="@dimen/text_size_NORMAL" />
+
+            <TextView
+                android:id="@+id/textView_taken_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:textColor="#5eb2b4"
+                android:text="Personal work"
+                android:textSize="@dimen/text_size_NORMAL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:id="@+id/textView_to_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="days"
+                android:gravity="center"
+
+
+                android:textSize="@dimen/text_size_NORMAL" />
+
+
+            <TextView
+                android:id="@+id/textView_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:gravity="center"
+                android:text="FROM 15 MAY 17 TO 15 MAY 17"
+                android:textColor="#5eb2b4"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:text="Level No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_NORMAL"
+                android:gravity="center"
+
+                android:id="@+id/textView_noti_time"
+                />
+
+
+            <TextView
+                android:text="03:15 PM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_NORMAL"
+                android:paddingLeft="6dp"
+                android:gravity="center"
+                android:textColor="#5eb2b4"
+                android:id="@+id/textView_levelno"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <TextView
+                android:text="Application Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_NORMAL"
+                android:gravity="center"
+
+                android:id="@+id/textView_remark"
+                />
+
+            <TextView
+                android:text="NA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="6dp"
+                android:textSize="@dimen/text_size_NORMAL"
+                android:gravity="center"
+                android:textColor="#5eb2b4"
+
+                android:layout_marginLeft="6dp"
+
+                android:id="@+id/textView_app_status"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="4dp">
+
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/aprove"
+            android:background="@drawable/roundbutton"
+            android:text="Approve"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/roundbutton"
+            android:text="Reject"
+            android:id="@+id/reject"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+    </LinearLayout>
+
+</LinearLayout>

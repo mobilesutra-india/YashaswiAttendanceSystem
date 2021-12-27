@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#414768"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        >
+        <Button
+            android:text="Apply New Leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_mark_Attendance"
+            android:textColor="#ffffff"
+            android:background="@drawable/roundbutton_applicaion_status"
+            android:drawableLeft="@drawable/mark_attendance_logo"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:paddingRight="20dp"
+            android:textStyle="normal"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:paddingLeft="20dp"
+            android:onClick="markattendance" />
+    </LinearLayout>
+
+</LinearLayout>

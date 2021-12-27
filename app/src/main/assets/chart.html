@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages': ['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function parse(val) {
+                var result = "Not found",
+                        tmp = [];
+                location.search
+                        //.replace ( "?", "" ) 
+                        // this is better, there might be a question mark inside
+                        .substr(1)
+                        .split("&")
+                        .forEach(function (item) {
+                            tmp = item.split("=");
+                            if (tmp[0] === val)
+                                result = decodeURIComponent(tmp[1]);
+                        });
+                return result;
+            }
+
+            function drawChart() {
+                var chart_data = '';
+                var url = ""+window.location;
+                if (url.indexOf("?chart_data=") === -1) {
+                    chart_data = JSON.parse('[{"label":"Present","count":10},{"label":"Absent","count":1},{"label":"Leave","count":2},{"label":"OD/OS/WFH","count":1},{"label":"Holiday","count":3},{"label":"WeeklyOff","count":2},{"label":"CompOff","count":5}]');
+                } else {
+                    chart_data = JSON.parse(parse('chart_data'));
+                }
+                
+                var d = [['Task', 'Hours per day']];
+                for (var i = 0; i < chart_data.length; i++) {
+                    d.push([chart_data[i].label, chart_data[i].count]);
+                }
+
+                var data = google.visualization.arrayToDataTable(d);
+
+                var options = {
+                    title: 'Employee Status'
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                chart.draw(data, options);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="piechart" style="width: auto; height: auto; overflow:hidden"></div>
+    </body>
+</html>

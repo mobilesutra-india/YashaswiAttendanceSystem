@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:weightSum="4">
+
+
+    <TextView
+        android:text="Total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/red_color"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:textSize="@dimen/text_size_16"
+        android:id="@+id/textView_week" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/red_color"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:textSize="@dimen/text_size_16"
+        android:id="@+id/textView_working_hrs_cal" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/red_color"
+        android:gravity="center"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:textSize="@dimen/text_size_16"
+        android:id="@+id/textView_actual_hrs_cal" />
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/red_color"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:textSize="@dimen/text_size_16"
+        android:id="@+id/textView_extra_hrs_cal" />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/manager_working_header"
+        android:weightSum="100"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:text=""
+            android:layout_width="0dp"
+            android:textColor="@color/white_color"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/manager_textsize_normal"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:id="@+id/textView_week" />
+
+        <TextView
+            android:text="Against Date"
+            android:layout_width="0dp"
+            android:textColor="@color/white_color"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/manager_textsize_normal"
+            android:gravity="center"
+            android:layout_weight="22"
+            android:id="@+id/textView_checkbox" />
+
+        <TextView
+            android:text="Avail. units"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/manager_textsize_normal"
+            android:layout_weight="15"
+            android:id="@+id/textView_working_hrs" />
+
+        <TextView
+            android:text="Expiry Date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/manager_textsize_normal"
+            android:layout_weight="20"
+            android:id="@+id/textView_actual_hrs" />
+
+        <TextView
+            android:text="Working  hrs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/manager_textsize_normal"
+            android:layout_weight="18"
+            android:id="@+id/textView_extra_hrs" />
+
+        <TextView
+            android:text="Used Co-off"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/manager_textsize_normal"
+            android:layout_weight="16"
+            android:id="@+id/textView_status_attendance" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/list_pop_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:background="#f3f3f3"
+            android:cacheColorHint="#515573"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:padding="4dp">
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundbutton"
+            android:text="Close"
+            android:id="@+id/button_ok"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+
+       <!-- <Button
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/roundbutton"
+            android:text="Cancel"
+            android:id="@+id/button_cancel"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"/>-->
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

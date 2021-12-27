@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+      <!--  <item name="android:actionBarSize">wrap_content</item>-->
+      <!-- <item name="colorControlNormal">@color/white_color</item>-->
+    </style>
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white_color</item>
+    </style>
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <!--<style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+    </style>-->
+    <style name="WhiteCheck">
+        <item name="colorAccent">#ffffff</item>
+    </style>
+
+  <!--  style for calnedar view.....-->
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#fd1766</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+    <!--   for text color of floating label for login-->
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/floatloginlabels</item>
+        <item name="colorAccent">@color/white_color</item>
+        <item name="colorControlNormal">@color/floatloginlabels</item>
+        <item name="colorControlHighlight">@color/floatloginlabels</item>
+        <item name="colorControlActivated">@color/floatloginlabels</item>
+        <!-- <item name="android:textSize">20sp</item>-->
+    </style>
+
+
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+
+    <!--   for large device navigation drawer...-->
+
+    <style name="NavigationViewStylelarge">
+        <item name="android:textSize">20sp</item> <!-- menu item text size-->
+        <!-- <item name="android:listPreferredItemHeightSmall">40dp</item>--><!-- menu item height-->
+        <item name="android:layout_marginTop">04dp</item>
+    </style>
+
+    <style name="My.Spinner.Style" parent="Base.Widget.AppCompat.Spinner.Underlined"></style>
+    <!--  ..........................-->
+
+
+    <style name="DialogDark">
+
+    </style>
+
+
+
+</resources>

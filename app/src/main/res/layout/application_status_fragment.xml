@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="match_parent">
+   <!-- <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true">-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:text="Latest Status"
+            android:layout_width="match_parent"
+            android:textColor="@color/white_color"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:gravity="start"
+            android:id="@+id/textView_shift_name" />
+
+    </LinearLayout>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+
+        android:layout_marginRight="10dp">
+        <ListView
+            android:id="@+id/list_allication_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#363b5a"
+            android:dividerHeight="10.0sp"
+            android:isScrollContainer="false"
+
+            android:focusable="false"
+            android:background="#f3f3f3"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/nav_head">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="151dp"
+    android:background="@drawable/attendance_through"
+    android:gravity="bottom"
+    android:id="@+id/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Soumya Sinha"
+        android:id="@+id/username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal" />-->
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Soumya Sinha"
+        android:id="@+id/username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#8d8d8d"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="normal" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+            android:id="@+id/linearLayout_1"
+        android:paddingTop="4dp"
+            android:layout_marginTop="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="start">
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:text="Branch"
+                android:textSize="12dp"
+                android:id="@+id/gender"
+                android:textColor="#4ec8bb"
+             />
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="12dp"
+                android:id="@+id/gendertxt"
+                android:textColor="#8d8d8d"
+               android:layout_marginTop="2dp"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="12dp"
+            android:textColor="#4ec8bb"
+            android:id="@+id/dob" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 oct 1992"
+                android:textColor="#8d8d8d"
+                android:textSize="12sp"
+                android:id="@+id/dobtxt"
+                android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout_2"
+            android:weightSum="2"
+           android:padding="4dp"
+            android:layout_marginTop="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:padding="2dp"
+                android:layout_gravity="start">
+
+
+                <TextView
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:text="Designation"
+                    android:id="@+id/profession"
+                    android:textColor="#4ec8bb"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:id="@+id/professiontxt"
+                    android:textColor="#8d8d8d"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Department"
+                    android:textColor="#4ec8bb"
+                    android:id="@+id/email"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="soumya@gmail.com"
+                    android:textColor="#8d8d8d"
+                    android:id="@+id/emailtext"
+                  android:layout_marginTop="2dp"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="#c0c0c0"/>
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:text="Leave Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center"
+
+                android:id="@+id/textView3"
+                />
+
+            <TextView
+                android:text="PL"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_16"
+                android:background="@drawable/leave_type_application_status"
+                android:layout_marginLeft="6dp"
+
+                android:id="@+id/textView_leave_type"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="end"
+
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:text="Balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:gravity="center"
+
+                android:id="@+id/textView_balance"
+                />
+
+            <TextView
+                android:text="03"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_14"
+                android:background="@drawable/leave_type_green"
+                android:layout_marginLeft="6dp"
+
+                android:id="@+id/textView_balance_text"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+      >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:text="Reason :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center"
+                android:id="@+id/textView_reason"
+                />
+
+            <TextView
+                android:text="Personal work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/textView_leave_reason"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:text="Date :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+
+
+                android:id="@+id/textView_noti_date"
+                />
+
+
+            <TextView
+                android:text="FROM 15 MAY 17 TO 15 MAY 17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="#5eb2b4"
+                android:paddingLeft="6dp"
+                android:id="@+id/textView_from_to_date"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Time :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center"
+
+                android:id="@+id/textView_noti_time"
+                />
+
+
+            <TextView
+                android:text="03:15 PM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:paddingLeft="6dp"
+                android:textColor="#5eb2b4"
+                android:id="@+id/textView_time"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:text="Remark :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center"
+
+                android:id="@+id/textView_remark"
+                />
+
+            <TextView
+                android:text="NA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="6dp"
+                android:textSize="@dimen/text_size_16"
+
+                android:layout_marginLeft="6dp"
+
+                android:id="@+id/textView_reamark_text"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="4dp">
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundbutton"
+            android:text="Approve"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/roundbutton"
+            android:text="Reject"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+    </LinearLayout>
+
+</LinearLayout>

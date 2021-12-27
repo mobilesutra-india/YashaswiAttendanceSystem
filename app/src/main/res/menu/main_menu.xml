@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/badge"
+        android:actionLayout="@layout/demo_noti"
+        android:icon="@drawable/ic_menu_cart"
+        android:title="notification"
+        android:showAsAction="always">
+    </item>
+</menu>

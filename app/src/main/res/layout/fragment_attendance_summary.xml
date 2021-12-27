@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <!-- date toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <!-- prev button -->
+        <ImageView
+            android:id="@+id/calendar_prev_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_action_left"/>
+
+        <!-- date title -->
+        <TextView
+            android:id="@+id/calendar_date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/calendar_prev_button"
+            android:layout_toLeftOf="@+id/calendar_next_button"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white_color"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:text="current date"/>
+
+        <!-- next button -->
+        <ImageView
+            android:id="@+id/calendar_next_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_action_right"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/white_color"
+        android:weightSum="8">
+
+
+
+        <TextView
+            android:text="P"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView5" />
+
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:gravity="center"
+            android:background="#4a4d6b"
+            android:id="@+id/button2" />
+
+
+        <TextView
+            android:text="A"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView6" />
+        <Button
+            android:text="0"
+            android:layout_width="0dp"
+            android:textColor="@color/white_color"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#4a4d6b"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:layout_gravity="center"
+            android:id="@+id/button3" />
+
+        <TextView
+            android:text="L"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black_color"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+
+            android:id="@+id/textView7" />
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:background="#4a4d6b"
+            android:id="@+id/button4" />
+        <TextView
+            android:text="OD"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView8" />
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="#4a4d6b"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/button5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:background="@color/white_color"
+        android:weightSum="8">
+
+
+        <TextView
+            android:text="WO"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView_wo" />
+
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#4a4d6b"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/button_wo" />
+
+        <TextView
+            android:text="SS"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView_ss" />
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#4a4d6b"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/button_ss" />
+
+        <TextView
+            android:text="CO"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black_color"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView_co" />
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:background="#4a4d6b"
+            android:id="@+id/button_co" />
+
+        <TextView
+            android:text="LM"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView_lm" />
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#4a4d6b"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/button_lm" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:background="@color/white_color"
+        android:weightSum="8">
+
+
+        <TextView
+            android:text="WFH"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView_wfh" />
+
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#4a4d6b"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/button_wfh" />
+
+        <TextView
+            android:text="H"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/textView_h" />
+        <Button
+            android:text="0"
+            android:textColor="@color/white_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#4a4d6b"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:id="@+id/button_h" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4a4d6b"
+        android:weightSum="4"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        >
+        <TextView
+            android:text="Weeks"
+            android:layout_width="0dp"
+            android:textColor="@color/white_color"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/textView_week"
+            android:textStyle="bold"/>
+        <TextView
+            android:text="Man Hours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:layout_weight="1"
+            android:id="@+id/textView_actual_hrs"
+            android:textStyle="bold"/>
+        <TextView
+            android:text="Avg. hours/day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:layout_weight="1"
+            android:id="@+id/textView_working_hrs"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:text="Over Time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_NORMAL"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:layout_weight="1"
+            android:id="@+id/textView_extra_hrs"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="true"
+            android:background="@color/white_color"
+
+            />
+    </LinearLayout>
+   <!-- <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="4">
+
+
+        <TextView
+            android:text="Total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/textView_week_cal" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/red_color"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/textView_working_hrs_cal" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/red_color"
+            android:gravity="center"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/textView_actual_hrs_cal" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/red_color"
+            android:fontFamily="@string/fontFamily__roboto_light"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/textView_extra_hrs_cal" />
+    </LinearLayout>-->
+</LinearLayout>

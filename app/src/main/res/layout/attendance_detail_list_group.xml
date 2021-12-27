@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    android:weightSum="100">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center|left"
+        android:textColor="#2d314e"
+        android:textSize="@dimen/text_size_14"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:id="@+id/textView_Date_attendance" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="22"
+        android:gravity="center"
+        android:textColor="#2d314e"
+        android:textSize="@dimen/text_size_14"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:id="@+id/textView_in_attendance" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="22"
+        android:gravity="center"
+        android:textColor="#2d314e"
+        android:textSize="@dimen/text_size_14"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:id="@+id/textView_out_attendance" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:textColor="#2d314e"
+        android:textSize="@dimen/text_size_14"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:id="@+id/textView_manhrs_attendance" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="16"
+        android:gravity="center"
+        android:textColor="#2d314e"
+        android:textSize="@dimen/text_size_14"
+        android:fontFamily="@string/fontFamily__roboto_light"
+        android:id="@+id/textView_status_attendance" />
+
+</LinearLayout>

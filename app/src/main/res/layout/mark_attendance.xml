@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/gradiant"
+    android:fitsSystemWindows="true"
+    tools:context="seedcommando.com.yashaswi.MainActivity">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        </include>
+
+    <!-- FOOTER -->
+    <LinearLayout android:id="@+id/bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <!-- menu bar -->
+        <include layout="@layout/applicationfooter" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+
+            android:visibility="visible" >
+            <SurfaceView
+                android:id="@+id/CameraView"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+
+                >
+
+            </SurfaceView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="31 july 2017"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18sp"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:textColor="@color/textColorPrimary"/>
+
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IN"
+                    android:textSize="26sp"
+                    android:fontFamily="@string/fontFamily__roboto_condensed"
+                    android:background="@drawable/camera_btn_in"
+                    android:textColor="@color/textColorPrimary"
+                    android:onClick="in_picture"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OUT"
+                    android:fontFamily="@string/fontFamily__roboto_condensed"
+                    android:textSize="26sp"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:background="@drawable/camera_btn_out"
+                    android:id="@+id/button"
+                    android:onClick="out_picture"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_lastpunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+            <TextView
+                android:id="@+id/txt_last_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:paddingTop="5dp"
+                android:text="Last Punch:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@string/fontFamily__roboto_light"
+                android:textColor="#579e4d"/>
+
+
+
+                <TextView
+                    android:id="@+id/txt_last_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:text=" 31 July 3:35 PM"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"/>
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_history_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punch History"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:textColor="@color/textColorPrimary"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#7f85a9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <ExpandableListView
+
+                    android:id="@+id/lvExp"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_width="match_parent"
+
+                    android:groupIndicator="@null"
+
+                    android:background="#3a4062"
+
+                    />
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

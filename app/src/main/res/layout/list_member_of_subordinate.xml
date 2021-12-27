@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4a4d6b"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView_namelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/fontFamily__roboto_light"
+                android:gravity="center"
+                android:text="text"
+                android:textColor="@color/white_color"
+
+
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/fontFamily__roboto_light"
+                android:gravity="center"
+                android:text="text"
+                android:textColor="@color/approver_hirarchy_color"
+
+
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Count"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/show_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/approver_hirarchy_color"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="true"
+            android:background="@color/white_color"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white_color"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:padding="10dp">
+
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundbutton"
+            android:text="Close"
+            android:id="@+id/button_ok"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_16"
+            android:fontFamily="@string/fontFamily__roboto_light"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

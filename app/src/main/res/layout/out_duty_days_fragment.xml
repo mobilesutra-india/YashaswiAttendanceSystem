@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    >
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+    <!--for white background layout-->
+       <!-- android:isScrollContainer="true"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:background="@color/background_app">
+
+            <!--  for date field....-->
+
+
+            <!--......................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floatIn_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint"
+                    android:paddingTop="6dp"
+                    android:layout_marginTop="6dp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="From Date"
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="none"
+                        android:focusableInTouchMode="false"
+
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_in_date_days"
+                        android:drawableRight="@drawable/ic_action_calendar"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <!--  .................-->
+
+
+
+            <!--  for out date field....-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floaout_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="To Date"
+                        android:focusableInTouchMode="false"
+
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="none"
+
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_out_date_days"
+                        android:drawableRight="@drawable/ic_action_calendar"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--  ..........................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_no_of_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint"
+                    android:layout_weight="0.2"
+                    android:padding="10dp">
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/attd_reg_app_no_of_days"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size_16"
+                        android:maxLines="1"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/txt_out_duty_cal_days"
+
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. of days"
+                android:layout_marginLeft="4dp"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:layout_weight="0.2"
+                android:id="@+id/noofdays"
+                android:fontFamily="@string/fontFamily__roboto_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="6dp"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:layout_weight="0.8"
+                android:id="@+id/txt_out_duty_cal_days"/>
+-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:padding="6dp">
+
+
+                <!--<android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_wfh_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_hint">-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="2dp"
+                    android:text="Reason"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <Spinner
+                    android:id="@+id/editText_wfh_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:hint="@string/app_reason"
+                    android:inputType="textNoSuggestions"
+                    android:padding="10dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/Text_size_normal_device_leavetype" />
+                <!-- </android.support.design.widget.TextInputLayout>-->
+            </LinearLayout>
+
+
+
+            <!--  for Reason field....-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <!-- for reason field........-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floaout_duty_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/out_duty_app_location"
+
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/text_color_hint"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_out_duty_location"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--............................-->
+
+
+
+
+
+
+
+
+            <!--  for remark field....-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:padding="2dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floaout_duty_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reason description"
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/text_color_hint"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_out_duty_remark"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--  ..........................-->
+
+            <!--for approver hirerarchy..........-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_approverhirearchy"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@string/fontFamily__roboto_light"
+                android:textColor="@color/approver_hirarchy_color"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="4"
+                android:layout_marginBottom="6dp"
+                android:paddingBottom="10dp"
+
+                android:id="@+id/linearout1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+
+                    android:id="@+id/linearout"
+                    >
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow1"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout2"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow2"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout3"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow3"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout4"
+                    >
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--</LinearLayout>-->
+    </LinearLayout>

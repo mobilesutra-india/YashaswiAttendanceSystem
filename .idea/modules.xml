@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Empower-master.iml" filepath="$PROJECT_DIR$/.idea/modules/Empower-master.iml" group="Empower-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Empower-master-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Empower-master-app.iml" group="Empower-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/EmpowerUI.iml" filepath="$PROJECT_DIR$/EmpowerUI.iml" group="EmpowerUI" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="EmpowerUI/app" />
+      <module fileurl="file://$PROJECT_DIR$/yashaswi.iml" filepath="$PROJECT_DIR$/yashaswi.iml" group="yashaswi" />
+      <module fileurl="file://$PROJECT_DIR$/app/yashaswi-app.iml" filepath="$PROJECT_DIR$/app/yashaswi-app.iml" group="yashaswi/app" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="#4a4d6b"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+
+
+
+            <Button
+                android:id="@+id/btn_leave_app"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:onClick="footer_leave_application"
+                android:text="@string/leave_application"
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"
+                android:textSize="16dp" />
+
+    <View
+        android:layout_width="0.25dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+
+    <Button
+        android:id="@+id/btn_comp_off"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:onClick="footer_comp_off"
+        android:text="@string/compoff_application"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="16dp" />
+
+            <View
+                android:layout_width="0.25dp"
+                android:layout_height="match_parent"
+                android:background="#fff" />
+
+
+             <Button
+                 android:id="@+id/btn_attd_reg"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:background="#00000000"
+                 android:onClick="footer_attend_reg"
+                 android:text="@string/attendance_regularization"
+                 android:textAllCaps="false"
+                 android:textColor="@color/white_color"
+                 android:textSize="16dp" />
+
+
+
+
+
+             <View
+                 android:layout_width="0.25dp"
+                 android:layout_height="match_parent"
+                 android:background="#fff" />
+
+             <Button
+                 android:id="@+id/btn_wfh"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+
+                 android:background="#00000000"
+                 android:gravity="center|center_vertical"
+                 android:onClick="footer_comp_off"
+                 android:text="WFH Application"
+                 android:textAllCaps="false"
+                 android:textColor="@color/white_color"
+                 android:textSize="16dp" />
+    <View
+        android:layout_width="0.25dp"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+
+    <Button
+        android:id="@+id/btn_out_duty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:onClick="footer_out_duty"
+        android:text="@string/out_duty_application"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="16dp" />
+        </LinearLayout>
+   <!-- </HorizontalScrollView>-->

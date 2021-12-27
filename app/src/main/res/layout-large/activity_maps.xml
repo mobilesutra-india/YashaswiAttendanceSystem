@@ -1,0 +1,201 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/snackbar"
+    tools:context=".MapsActivity" >
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="seedcommando.com.yashaswi.MapsActivity"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/tress"
+            android:layout_above="@id/bottom"
+            android:layout_alignWithParentIfMissing="true"
+            android:weightSum="2">
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </LinearLayout>-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="400dp"
+
+        >
+        <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:padding="2dp">
+         <TextView
+             android:id="@+id/txt_date"
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="5dp"
+             android:layout_marginRight="5dp"
+             android:gravity="center"
+             android:text=""
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="@dimen/Text_size_mark_Att"
+             android:fontFamily="@string/fontFamily__roboto_light"
+             android:textColor="#141e61"
+             android:textStyle="bold"
+             android:background="#BFffffff"
+             android:padding="8dp"/>
+     </LinearLayout>
+        <LinearLayout
+        android:id="@+id/linear_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN"
+            android:textSize="26sp"
+            android:fontFamily="@string/fontFamily__roboto_condensed"
+            android:background="@drawable/camera_btn_in_large"
+            android:textColor="@color/textColorPrimary"
+            android:onClick="in_picture"
+            android:id="@+id/button_in"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUT"
+            android:fontFamily="@string/fontFamily__roboto_condensed"
+            android:textSize="26sp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/textColorPrimary"
+            android:background="@drawable/camera_btn_out_large"
+            android:id="@+id/button_out"
+            android:onClick="out_picture"
+            />
+
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/linear_lastpunch"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_gravity="center"
+         android:layout_marginTop="4dp"
+         android:background="#D9ffffff"
+         android:padding="2dp">
+
+         <TextView
+             android:id="@+id/txt_last_entry"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"
+             android:gravity="left"
+             android:text="Last Punch:"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="@dimen/text_size_LARGE"
+            android:layout_marginLeft="20dp"
+             android:fontFamily="@string/fontFamily__roboto_condensed"
+             android:textColor="#579e4d"
+             />
+
+
+
+         <TextView
+             android:id="@+id/txt_last_date"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"
+             android:gravity="left"
+
+             android:text=" "
+             android:fontFamily="@string/fontFamily__roboto_light"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="@dimen/text_size_LARGE"
+             android:layout_marginLeft="10dp"
+             android:textColor="#454b6b"
+             android:layout_marginRight="20dp"/>
+
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:id="@+id/layout_history"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="10dp"
+         android:gravity="center"
+         android:weightSum="2">
+
+         <ExpandableListView
+
+             android:id="@+id/lvExp"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="4dp"
+             android:groupIndicator="@drawable/group_indicator"
+         />
+     </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tress"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+    <!-- FOOTER -->
+    <LinearLayout android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <!-- menu bar -->
+        <ViewStub
+            android:id="@+id/layout_stub"
+            android:inflatedId="@+id/message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+       <!-- <include layout="@layout/applicationfooter_wfh" />-->
+    </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+

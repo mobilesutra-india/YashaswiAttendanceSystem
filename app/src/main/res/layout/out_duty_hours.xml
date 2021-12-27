@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:focusableInTouchMode="true">
+
+    <!--for white background layout-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <!--android:isScrollContainer="true"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@color/background_app">
+
+            <!--  for date field....-->
+
+
+            <!--......................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floatIn_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="4dp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/out_duty_app_date"
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="none"
+                        android:focusableInTouchMode="false"
+                        android:editable="false"
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_date_hrs"
+                        android:drawableRight="@drawable/ic_action_calendar"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <!--  .................-->
+
+
+
+            <!--  for from time field....-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floatout_duty_from_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/out_duty_app_fromtime"
+                        android:textSize="@dimen/text_size_16"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_in_time_hrs"
+                        android:drawableRight="@drawable/ic_action_clock"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+           <!-- for To time....-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floatout_duty_to_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/out_duty_app_totime"
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="4dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_out_time_hrs"
+                        android:drawableRight="@drawable/ic_action_clock"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--  ......................-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:orientation="horizontal"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_no_of_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint"
+                    android:text="Duration :"
+                    android:padding="4dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+
+                    android:fontFamily="@string/fontFamily__roboto_light">
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Duration :"
+                        android:editable="false"
+                        android:textSize="@dimen/text_size_16"
+                        android:maxLines="1"
+                        android:inputType="none"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@color/text_color_hint"
+                        android:drawablePadding="2dp"
+                        android:id="@+id/txt_out_duty_cal_days"
+
+                        android:fontFamily="@string/fontFamily__roboto_light"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duration :"
+                    android:layout_marginLeft="2dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@string/fontFamily__roboto_light"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="6dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_weight="0.8"
+                    android:id="@+id/txt_out_duty_cal_days"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:padding="6dp">
+
+
+                <!--<android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_float_wfh_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textColorHint="@color/text_color_hint">-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="2dp"
+                    android:text="Reason"
+                    android:textSize="@dimen/text_size_16" />
+
+
+                <Spinner
+                    android:id="@+id/editText_wfh_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fontFamily__roboto_light"
+                    android:hint="@string/app_reason"
+                    android:inputType="textNoSuggestions"
+                    android:padding="10dp"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/Text_size_normal_device_leavetype" />
+                <!-- </android.support.design.widget.TextInputLayout>-->
+            </LinearLayout>
+
+
+            <!--  for Reason field....-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- for reason field........-->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floatout_duty_location_hrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/out_duty_app_location"
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/text_color_hint"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_out_date_location_hrs"
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--............................-->
+
+
+
+
+
+            <!--  for remark field....-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_floatout_duty_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/text_color_hint">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reason description"
+                        android:textSize="@dimen/text_size_16"
+                        android:inputType="textNoSuggestions"
+                        android:editable="false"
+                        android:textColor="@color/text_color_hint"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:id="@+id/editText_out_date_remark"
+
+                        android:fontFamily="@string/fontFamily__roboto_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <!--  ..........................-->
+
+            <!--for approver hirerarchy..........-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_approverhirearchy"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@string/fontFamily__roboto_light"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/approver_hirarchy_color"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="4"
+                android:paddingBottom="20dp"
+
+                android:id="@+id/linearout1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+
+                    android:id="@+id/linearout"
+                    >
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow1"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout2"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow2"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout3"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow3"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linearout4"
+                    >
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--</LinearLayout>-->
+</LinearLayout>

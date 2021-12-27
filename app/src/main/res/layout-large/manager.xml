@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">-->
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!-- <LinearLayout
+              android:id="@+id/container_toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <include
+                  android:id="@+id/toolbar"
+                  layout="@layout/toolbar" />
+          </LinearLayout>-->
+
+
+    <!-- <FrameLayout
+         android:id="@+id/content_frame"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:layout="@layout/content_main"/>-->
+
+    <!--    </LinearLayout>-->
+
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/nav_drawer_menu"
+        app:theme="@style/NavigationViewStylelarge"
+        app:itemTextColor="#8d8d8d"
+        app:itemIconTint="#8d8d8d"
+        >
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+    &lt;!&ndash;  &lt;!&ndash; FOOTER &ndash;&gt;&ndash;&gt;
+    <LinearLayout android:id="@+id/bottom_menu"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_alignParentBottom="true"
+        >
+        &lt;!&ndash;        &lt;!&ndash; menu bar &ndash;&gt;&ndash;&gt;
+        <include layout="@layout/applicationfooter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiant"
+        android:orientation="vertical"
+        android:layout_below="@+id/header"
+        android:layout_above="@id/bottom_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_weight=".60"
+                >
+                <TextView
+                    android:text="Pending Approvals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white_color"
+                    android:id="@+id/textView4" />
+                <TextView
+                    android:text="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_pending_leaves"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="26dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:text="Mark Attendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_mark_Attendance"
+                android:textColor="#62e444"
+                android:background="@drawable/roundbutton_manager"
+                android:drawableLeft="@drawable/mark_att_logo"
+                android:textSize="12sp"
+                android:layout_weight="1.2"
+                android:onClick="markattendance" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                layout="@layout/tabs"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/header"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                />
+
+        </LinearLayout>
+
+        &lt;!&ndash; FOOTER &ndash;&gt;
+        <LinearLayout android:id="@+id/bottom_menu"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_alignParentBottom="true"
+            >
+            &lt;!&ndash; menu bar &ndash;&gt;
+            <include layout="@layout/applicationfooter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradiant"
+            android:orientation="vertical"
+            android:layout_below="@+id/header"
+            android:layout_above="@id/bottom_menu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_weight=".60"
+                    >
+                    <TextView
+                        android:text="Pending Approvals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/white_color"
+                        android:id="@+id/textView4" />
+                    <TextView
+                        android:text="10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button_pending_leaves"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="26dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:text="Mark Attendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_mark_Attendance"
+                    android:textColor="#62e444"
+                    android:background="@drawable/roundbutton_manager"
+                    android:drawableLeft="@drawable/mark_att_logo"
+                    android:textSize="12sp"
+                    android:layout_weight="1.2"
+                    android:onClick="markattendance" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_container">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    layout="@layout/tabs"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        &lt;!&ndash;
+        for hambergur menu&ndash;&gt;
+
+        <android.support.v4.widget.DrawerLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:openDrawer="start">
+
+            &lt;!&ndash;
+            <include
+                layout="@layout/app_bar_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            &ndash;&gt;
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true"
+                app:headerLayout="@layout/nav_header_main"
+                app:menu="@menu/nav_drawer_menu"
+                app:itemTextColor="#8d8d8d"
+                app:itemIconTint="#8d8d8d"
+                app:theme="@style/NavigationViewStylelarge">
+
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>&ndash;&gt;
+
+    </RelativeLayout>
+
+        &lt;!&ndash;...........................&ndash;&gt;
+
+
+
+
+
+
+
+        &lt;!&ndash;
+        <?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/header"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar"
+                    />
+            </LinearLayout>
+
+            &lt;!&ndash; FOOTER &ndash;&gt;
+            <LinearLayout android:id="@+id/bottom_menu"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_alignParentBottom="true">
+                &lt;!&ndash; menu bar &ndash;&gt;
+                <include layout="@layout/applicationfooter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradiant"
+                android:orientation="vertical"
+                android:layout_below="@+id/header"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                   android:layout_weight=".60"
+                    >
+                    <TextView
+                        android:text="Pending Approvals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/white_color"
+                        android:id="@+id/textView4" />
+                    <TextView
+                        android:text="10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button_pending_leaves"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="30dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:text="Mark Attendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_mark_Attendance"
+                    android:textColor="#62e444"
+                    android:background="@drawable/roundbutton"
+                    android:drawableLeft="@drawable/mark_att_logo"
+                    android:layout_weight="1.2"
+                    />
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        layout="@layout/tabs"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        &ndash;&gt;
+    -->
+
